@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/kdd99extractor.dir/IpReassembler.cpp.obj"
   "CMakeFiles/kdd99extractor.dir/IpReassemblyBuffer.cpp.obj"
   "CMakeFiles/kdd99extractor.dir/IpReassemblyBufferHoleList.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/Mysql.cpp.obj"
   "CMakeFiles/kdd99extractor.dir/Packet.cpp.obj"
   "CMakeFiles/kdd99extractor.dir/ReferenceCounter.cpp.obj"
   "CMakeFiles/kdd99extractor.dir/Sniffer.cpp.obj"

@@ -1,1 +1,1 @@
- -lws2_32 -lwsock32 C:/Tools/npcap-sdk-1.11/Lib/wpcap.lib -lWs2_32 -lWs2_32 C:/Tools/npcap-sdk-1.11/Lib/wpcap.lib -lWs2_32 -lWs2_32 C:/Tools/npcap-sdk-1.11/Lib/x64/wpcap.lib C:/Tools/npcap-sdk-1.11/Lib/wpcap.lib C:/Tools/npcap-sdk-1.11/Lib/wpcap.lib -lWs2_32 C:/Tools/npcap-sdk-1.11/Lib/x64/wpcap.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ -lWs2_32 -lWs2_32 C:/Tools/npcap-sdk-1.11/Lib/x64/wpcap.lib -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

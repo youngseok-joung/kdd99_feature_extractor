@@ -11,6 +11,13 @@
 #  PCAP_LIBRARIES    - List of libraries when using pcap.
 #  PCAP_FOUND        - True if pcap found.
 
+if( WIN32 )
+  link_libraries(ws2_32 wsock32)
+endif()
+
+# libpcap / WinPcap
+find_package(PCAP)
+
 # The 64-bit wpcap.lib is under /x64
 set ( _PLATFORM_SUBDIR "" )
 if( WIN32 )

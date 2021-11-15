@@ -7,20 +7,13 @@ project (kdd99extractor CXX C)
 # Distributed CMake Find modules
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
-if( WIN32 )
-    link_libraries(ws2_32 wsock32)
-endif()
-
-# libpcap / WinPcap
-find_package(PCAP)
-include_directories(BEFORE ${PCAP_INCLUDE_DIR})
-
-set(LIBS ${PCAP_LIBRARIES})
-
+#include_directories(BEFORE ${PCAP_INCLUDE_DIR} ${MYSQL_INCLUDE_DIRS})
 message(STATUS "CMAKE_SOURCE_DIR=${CMAKE_SOURCE_DIR}")
 message(STATUS "ENV{PCAPDIR}=$ENV{PCAPDIR}")
 message(STATUS "PCAP_FOUND=${PCAP_FOUND}")
 message(STATUS "PCAP_LIBRARIES=${PCAP_LIBRARIES}")
 message(STATUS "PCAP_INCLUDE_DIR=${PCAP_INCLUDE_DIR}")
+message(STATUS "MYSQL_INCLUDE_DIRS=${MYSQL_INCLUDE_DIRS}")
+message(STATUS "MYSQL_LIBRARIES=${MYSQL_LIBRARIES}")
 
 add_subdirectory(src)

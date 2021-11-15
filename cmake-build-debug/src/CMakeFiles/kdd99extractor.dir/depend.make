@@ -128,6 +128,8 @@ src/CMakeFiles/kdd99extractor.dir/IpReassemblyBufferHoleList.cpp.obj: \
  ../src/IpReassemblyBufferHoleList.cpp \
  ../src/IpReassemblyBufferHoleList.h \
  ../src/types.h
+src/CMakeFiles/kdd99extractor.dir/Mysql.cpp.obj: \
+ ../src/Mysql.cpp
 src/CMakeFiles/kdd99extractor.dir/Packet.cpp.obj: \
  ../src/FiveTuple.h \
  ../src/Packet.cpp \
