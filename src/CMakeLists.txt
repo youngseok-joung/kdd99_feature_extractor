@@ -1,8 +1,8 @@
 # Project source & header files
 file(GLOB SOURCES
-  "*.h"
-  "*.cpp"
-)
+        "*.h"
+        "*.cpp"
+        )
 
 set(INCLUDES ${PCAP_INCLUDE_DIR})
 set(LIBS ${PCAP_LIBRARIES})
@@ -12,11 +12,17 @@ if(UNIX)
   SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -std=gnu++0x")
 endif()
 
+if( WIN32 )
+  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -static -static-libgcc -static-libstdc++")
+endif()
+
 # ntohs() function in Windows
 if( WIN32 )
   set( LIBS ${LIBS} "Ws2_32")
 endif()
 
 include_directories(${INCLUDES})
+link_libraries(${LIBS})
 add_executable(kdd99extractor ${SOURCES})
-target_link_libraries(kdd99extractor ${LIBS})
+#target_link_libraries(kdd99extractor ${LIBS})
+target_link_libraries(kdd99extractor ${LIBS} "C:/Tools/npcap-sdk-1.11/Lib/x64/wpcap.lib")

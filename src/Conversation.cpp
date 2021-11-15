@@ -1,6 +1,7 @@
 #include <sstream>
 #include <iostream>
 #include "Conversation.h"
+#include <time.h>
 
 namespace FeatureExtractor {
 	using namespace std;
@@ -362,14 +363,14 @@ namespace FeatureExtractor {
 		stringstream ss;
 
 		struct tm *ltime;
-		//struct tm timeinfo;
+		struct tm timeinfo;
 		char timestr[16];
 		time_t local_tv_sec;
-		//local_tv_sec = start_ts.get_secs();
-		ltime = localtime(&local_tv_sec);
-		//localtime_s(&timeinfo, &local_tv_sec);
-		strftime(timestr, sizeof timestr, "%H:%M:%S", ltime);
-		//strftime(timestr, sizeof timestr, "%H:%M:%S", &timeinfo);
+		local_tv_sec = start_ts.get_secs();
+//		ltime = localtime(&local_tv_sec);
+		localtime_s(&timeinfo, &local_tv_sec);
+//		strftime(timestr, sizeof timestr, "%H:%M:%S", ltime);
+		strftime(timestr, sizeof timestr, "%H:%M:%S", &timeinfo);
 
 		ss << "CONVERSATION ";
 		if (five_tuple.get_ip_proto() == ICMP) {

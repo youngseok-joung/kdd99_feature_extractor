@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/kdd99extractorExe.dir/Config.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/Conversation.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/ConversationFeatures.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/ConversationReconstructor.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/FeatureUpdaterCount.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/FeatureUpdaterTime.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/FiveTuple.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/IcmpConversation.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/IntervalKeeper.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/IpDatagram.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/IpFragment.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/IpReassembler.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/IpReassemblyBuffer.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/IpReassemblyBufferHoleList.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/Packet.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/ReferenceCounter.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/Sniffer.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/StatsEngine.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/StatsPerHost.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/StatsPerService.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/StatsPerServiceWithSrcPort.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/StatsWindow.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/StatsWindowCount.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/StatsWindowTime.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/TcpConnection.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/Timestamp.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/UdpConversation.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/main.cpp.obj"
+  "CMakeFiles/kdd99extractorExe.dir/net.cpp.obj"
+  "kdd99extractorExe.exe"
+  "kdd99extractorExe.exe.manifest"
+  "kdd99extractorExe.pdb"
+  "libkdd99extractorExe.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/kdd99extractorExe.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

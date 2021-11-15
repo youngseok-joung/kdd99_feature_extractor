@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/kdd99extractor.dir/Config.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/Conversation.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/ConversationFeatures.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/ConversationReconstructor.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/FeatureUpdaterCount.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/FeatureUpdaterTime.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/FiveTuple.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/IcmpConversation.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/IntervalKeeper.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/IpDatagram.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/IpFragment.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/IpReassembler.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/IpReassemblyBuffer.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/IpReassemblyBufferHoleList.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/Packet.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/ReferenceCounter.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/Sniffer.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/StatsEngine.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/StatsPerHost.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/StatsPerService.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/StatsPerServiceWithSrcPort.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/StatsWindow.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/StatsWindowCount.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/StatsWindowTime.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/TcpConnection.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/Timestamp.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/UdpConversation.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/main.cpp.obj"
+  "CMakeFiles/kdd99extractor.dir/net.cpp.obj"
+  "kdd99extractor.exe"
+  "kdd99extractor.exe.manifest"
+  "kdd99extractor.pdb"
+  "libkdd99extractor.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/kdd99extractor.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

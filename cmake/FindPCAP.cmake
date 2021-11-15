@@ -13,26 +13,27 @@
 
 # The 64-bit wpcap.lib is under /x64
 set ( _PLATFORM_SUBDIR "" )
-if( WIN32 AND CMAKE_CL_64 )
+if( WIN32 )
   set ( _PLATFORM_SUBDIR "/x64" )
 endif()
 
 find_path( PCAP_INCLUDE_DIR
   NAMES
-  pcap/pcap.h
-  pcap.h
-  HINTS
+    pcap/pcap.h
+    pcap.h
+  PATHS
     "$ENV{PCAPDIR}/include"
 )
 
-find_library( PCAP_LIBRARY
-  NAMES
-    pcap
-    wpcap
-  HINTS
-    "$ENV{PCAPDIR}/lib${_PLATFORM_SUBDIR}"
+find_library(
+    PCAP_LIBRARY
+    NAMES
+      pcap
+      wpcap
+    PATHS "$ENV{PCAPDIR}/lib${_PLATFORM_SUBDIR}"
 )
 
+message(STATUS "PCAP_LIBRARY=${PCAP_LIBRARY}")
 
 include( FindPackageHandleStandardArgs )
 find_package_handle_standard_args( PCAP DEFAULT_MSG PCAP_INCLUDE_DIR PCAP_LIBRARY )
@@ -41,7 +42,7 @@ if( PCAP_FOUND )
   set( PCAP_INCLUDE_DIRS ${PCAP_INCLUDE_DIR} )
   set( PCAP_LIBRARIES ${PCAP_LIBRARY} )
   if( WIN32 )
-    set( PCAP_LIBRARIES ${PCAP_LIBRARIES} "Ws2_32")
+    set( PCAP_LIBRARIES ${PCAP_LIBRARIES} "Ws2_32" "")
   endif()
 else()
   set( PCAP_INCLUDE_DIRS )
@@ -93,3 +94,9 @@ endif()
 cmake_pop_check_state()
 
 mark_as_advanced( PCAP_LIBRARIES PCAP_INCLUDE_DIRS )
+
+
+message(STATUS "PCAP_LIBRARIES=${PCAP_LIBRARIES}")
+message(STATUS "PCAP_INCLUDE_DIRS=${PCAP_INCLUDE_DIRS}")
+
+include_directories(${INCLUDES})
